@@ -1,0 +1,19 @@
+mat-toolbar {
+    font-size: 5em;
+    color: whitesmoke;
+    background-color: rgb(8, 8, 30);
+    height: 15vh;
+    padding-left: 28%;
+    text-align: center;
+}
+
+nav {
+    background-color: rgb(161, 38, 7);
+    padding-left: 40%;
+}
+
+a {
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.5em ;
+}

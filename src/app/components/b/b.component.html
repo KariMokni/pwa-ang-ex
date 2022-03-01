@@ -1,0 +1,18 @@
+<mat-card>
+    <mat-form-field>
+      <mat-label>Kilometre</mat-label>
+      <input matInput name="kilo" [(ngModel)]="kilo" (ngModelChange)="kiloEnMetre()">
+      <button *ngIf="kilo || metre" matSuffix mat-icon-button aria-label="Clear" (click)="kilo = 0 || metre = 0">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+      <p><span class="iconify" data-icon="fluent:arrow-sort-24-filled"></span></p>
+      <br>
+    <mat-form-field>
+      <mat-label>Metre</mat-label>
+      <input matInput name="metre" [(ngModel)]="metre" (ngModelChange)="metreEnKilo()">
+      <button *ngIf="metre || kilo" matSuffix mat-icon-button aria-label="Clear" (click)="metre = 0 || kilo = 0">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+  </mat-card>
